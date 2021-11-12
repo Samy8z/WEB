@@ -1,0 +1,40 @@
+p {
+    font-size: 24px;
+    font-weight: lighter;
+    color: red;
+}
+article {
+    width: 50px;
+    border: 3px dashed blue;
+    background-color: aquamarine;
+}
+
+article p {
+    font-size: 20px;
+    text-decoration: underline;
+    color: blanchedalmond;
+}
+
+p {
+    text-decoration: wavy;
+    color: green;
+}
+
+article {
+    display: inline;
+}
+
+div {
+    display: inline-block;
+    background-color: blue;
+}
+
+section {
+    display: none;
+    background-color: chartreuse;
+}
+
+aside {
+    display: block;
+    background: black;
+}
