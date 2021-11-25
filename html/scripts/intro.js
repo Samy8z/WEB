@@ -1,1 +1,3 @@
-alert('Hello World !')
+let nom = prompt("Entrez votre nom")
+alert(`Hello ${nom}`)
+
