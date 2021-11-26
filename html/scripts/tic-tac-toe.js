@@ -1,14 +1,15 @@
 const cells = document.getElementsByClassName('game-cell')
-const PAYER_X_CLASS = 'x'
-const PLAYER_O_CLASS = 'circle'
 
+function initialisePartie() {
+    let tour = 0
 
-
-
-for (let i = 0; i < cells.length; i++){
-    const cell = cells[i]
-
-    cell.addEventListener('click', function click(ev){
-        console.log(ev.target.dataset)
-    },{ once: true})
+    for (let i = 0; i < cells.length; i++){
+        const cell = cells[i]
+    
+        cell.addEventListener('click', function click(ev){
+            ev.target.dataset.player = tour++ % 2 === 0 ? "1" : "2"
+        }, {once:true})
+    }
 }
+
+initialisePartie()
