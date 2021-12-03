@@ -30,6 +30,20 @@ openBtn.addEventListener('click', function click(ev) {
     confirm.setAttribute('type', 'button')
     confirm.innerText = "Confirmer"
 
+function CloseModal(){
+    close.removeEventListener('click',CloseModal)
+    cancel.removeEventListener('click',CloseModal)
+    confirm.removeEventListener('click',CloseModal)
+    modal.remove()
+}
+
+close.addEventListener('click',CloseModal)
+cancel.addEventListener('click',CloseModal)
+confirm.addEventListener('click',CloseModal)
+
+
+
+
     // On l'ajoute au document
     document.body.appendChild(modal)
 })
