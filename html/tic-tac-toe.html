@@ -9,20 +9,22 @@
 </head>
 <body>
     <div class="game-board">
-        <div class="game-cell" data-x="0" data-y="0" data-player="none"></div>
+        <div class="game-cell" data-x="0" data-y="0" data-diag1 data-player="none"></div>
         <div class="game-cell" data-x="1" data-y="0" data-player="none"></div>
-        <div class="game-cell" data-x="2" data-y="0" data-player="none"></div>
+        <div class="game-cell" data-x="2" data-y="0" data-diag2 data-player="none"></div>
         <div class="game-cell" data-x="0" data-y="1" data-player="none"></div>
-        <div class="game-cell" data-x="1" data-y="1" data-player="none"></div>
+        <div class="game-cell" data-x="1" data-y="1" data-diag1 data-player="none"></div>
         <div class="game-cell" data-x="2" data-y="1" data-player="none"></div>
-        <div class="game-cell" data-x="0" data-y="2" data-player="none"></div>
+        <div class="game-cell" data-x="0" data-y="2" data-diag2 data-player="none"></div>
         <div class="game-cell" data-x="1" data-y="2" data-player="none"></div>
-        <div class="game-cell" data-x="2" data-y="2" data-player="none"></div>
+        <div class="game-cell" data-x="2" data-y="2" data-diag1 data-player="none"></div>
     </div>
     <div class="winning-message" id="winningmessage">
         <div id="winningMessageText"></div>
         <button onClick="window.location.reload();">Restart</button>
     </div> 
-    <script src="./scripts/tic-tac-toe.js"></script>
+    <!--script src="./scripts/tic-tac-toe.js"></script>-->
+    <script src="scripts/JQuery.js"></script>
+    <script src="scripts/tic-tac-toe.jquery.js"></script>
 </body>
 </html>
