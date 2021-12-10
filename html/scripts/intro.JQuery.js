@@ -15,3 +15,19 @@ $('div').on('click',function click(){
     }
     count++
 })
+
+let show = true
+$('.toggleText').on('click', function click(){
+    /*
+    if (show){
+    $('text').hide()
+} else {
+    $('.text').show()
+    }
+    show = !show
+    */
+   $('.text').toggle()
+})
+
+
+
